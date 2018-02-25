@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.zulfikaranshari.zulfikaransharioktafinawan_1202154136_modul3.DetailActivity">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:src="@drawable/ades" />
+
+        <TextView
+            android:id="@+id/paragraf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:text="@array/desc_src" />
+
+        <ImageView
+            android:id="@+id/airLevel"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/paragraf"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/images" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airLevel"
+            android:layout_toEndOf="@+id/airLevel"
+            android:layout_toRightOf="@id/airLevel"
+            android:onClick="addLevel"
+            android:src="@drawable/ic_plus" />
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/air_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airLevel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="1L"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/button_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airLevel"
+            android:layout_toLeftOf="@id/airLevel"
+            android:onClick="decreaseLevel"
+            android:src="@drawable/ic_minus" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
